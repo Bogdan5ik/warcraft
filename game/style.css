@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.col-12{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background-image: url(img/Warcraft.png);
+    background-size: cover;
+    display: block;
+}
+
+.col{
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-6{
+    display: flex;
+}
+
+.img-5{
+    background: white;
+    height: 5rem;
+    width: 5rem;
+    display: none;
+}
+
+.img-6{
+    background: white;
+    height: 5rem;
+    width: 5rem;
+}
+
+.col-6 div{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 0 20px 0;
+}
+
+.img-1{
+    height: 4rem;
+}
+
+.row1{
+    display: block;
+    width: 8%;
+    margin: 0 10px 0;
+    border: 1px solid white;
+}
+
+.der{
+    width: 24%;
+    height: 65%;
+    margin-left: 60%;
+    cursor: pointer;
+}
+
+.kas{
+    width: 16%;
+    height: 52%;
+    margin-top: 22%;
+    margin-right: 20%;
+    cursor: pointer;
+    z-index: 99;
+    display: none;
+}
+
+.img-3{
+    height: 25rem;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 16%;
+    display: none;
+}
+
+.row1 button{
+    width: 100%;
+    height: 30%;
+}
+
+.img-2{
+    width: 100%;
+    height: 70%;
+}
+
+.img-4{
+    width: 80%;
+    height: 70%;
+}
+
+.col:nth-child(2){
+    height: 70%;
+    display: flex;
+}
+
+.col:nth-child(3){
+    height: 20%;
+    display: flex;
+    justify-content: start;
+}
+
+.p-1{
+    color: red;
+}
