@@ -4,21 +4,30 @@ let rock_set = 0;
 let doski_set = 0;
 let top2 = 0;
 let pokupka = 0;
+let win = 0;
 
 
 let timerId = setInterval(function(){
     if (otset > 0) {
-        otset -= 1;
+        otset -= 20;
         document.querySelector('.otchet').innerHTML = otset;
-    } else {
+    } else{
         clearInterval(timerId);
         document.querySelector('.otchet').innerHTML = 0;
         alert("На вас напали!")
+        if(win < 1){
+        alert("Вы не успели постоить защиту, Вы проиграли!")
+        window.location.href = "https://bogdan5ik.github.io/warcraft/";
+        return;
     }
+    alert("Вы успели построить защиту! Вы выйграли!!")
+    window.location.href = "https://bogdan5ik.github.io/warcraft/";
+    }
+    
 }, 1000);
 
 document.querySelector('.podzkazka').onclick = function(){
-    alert("Найди дерево или камень, и нажимай на него. Если дерево не добываеться, то нажимай на него с право стороны.")
+    alert("Найди дерево или камень, и нажимай на него. Добывай дерево которое ближе к камню.")
 }
 
 document.querySelector('.wood_s').onclick = function(){
@@ -85,12 +94,30 @@ document.querySelector('.buy-3').onclick = function(){
     document.querySelector('.wood-sc').innerHTML = wood_set;
 }
 
-document.querySelector('.img-5').onclcik = function(){
-    document.querySelector('.img-6').style.display = "flex"
-    document.querySelector('.img-5').style.display = "none"
+document.querySelector('.buy-4').onclick = function(){
+    if(doski_set < 50 || rock_set < 120){
+        alert("Недостаточно материалов")
+        return;
+    }
+    doski_set -= 50;
+    rock_set -= 120;
+    document.querySelector('.doski-sc').innerHTML = doski_set;
+    document.querySelector('.rock-sc').innerHTML = rock_set;
+    alert("Вы купили Защитную Башню")
+    document.querySelector('.img4').style.display = "flex";
+    win += 1;
 }
 
-document.querySelector('.img-6').onclcik = function(){
-    document.querySelector('.img-5').style.display = "flex"
-    document.querySelector('.img-6').style.display = "none"
+document.querySelector('.buy-5').onclick = function(){
+    if(doski_set < 50 || rock_set < 120){
+        alert("Недостаточно материалов")
+        return;
+    }
+    doski_set -= 50;
+    rock_set -= 120;
+    document.querySelector('.doski-sc').innerHTML = doski_set;
+    document.querySelector('.rock-sc').innerHTML = rock_set;
+    alert("Вы купили Защитную Башню")
+    document.querySelector('.img5').style.display = "flex";
+    win += 1;
 }
