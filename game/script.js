@@ -9,13 +9,13 @@ let win = 0;
 
 let timerId = setInterval(function(){
     if (otset > 0) {
-        otset -= 20;
+        otset -= 1;
         document.querySelector('.otchet').innerHTML = otset;
     } else{
         clearInterval(timerId);
         document.querySelector('.otchet').innerHTML = 0;
         alert("На вас напали!")
-        if(win < 1){
+        if(win < 2){
         alert("Вы не успели постоить защиту, Вы проиграли!")
         window.location.href = "https://bogdan5ik.github.io/warcraft/";
         return;
@@ -81,6 +81,7 @@ document.querySelector('.buy-2').onclick = function(){
     document.querySelector('.doski-sc   ').innerHTML = wood_set;
     document.querySelector('.rock-sc').innerHTML = rock_set;
     document.querySelector('.img-3').style.display = "flex";
+    win += 1;
 }
 
 document.querySelector('.buy-3').onclick = function(){
