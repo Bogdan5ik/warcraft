@@ -26,6 +26,10 @@ let timerId = setInterval(function(){
     
 }, 1000);
 
+setTimeout(function(){
+    document.querySelector('.img6').style.left = "20%";
+}, 215000)
+
 document.querySelector('.podzkazka').onclick = function(){
     alert("Найди дерево или камень, и нажимай на него. Добывай дерево которое ближе к камню.")
 }

@@ -122,6 +122,15 @@ body{
     margin-top: 17%;
 }
 
+.img6{
+    position: absolute;
+    height: 15rem;
+    width: 10rem;
+    top: 24%;
+    left: -8%;  
+    transition: left 5s;
+}
+
 .col:nth-child(2){
     height: 70%;
     display: flex;

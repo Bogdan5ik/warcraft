@@ -18,3 +18,9 @@
 .p-1{
     font-size: 2rem;
 }
+
+.col-3{
+    background: rgb(0, 0, 0, 0.7);
+    height: 30rem;
+    color: white;
+}
