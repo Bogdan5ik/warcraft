@@ -15,7 +15,7 @@ let timerId = setInterval(function(){
         clearInterval(timerId);
         document.querySelector('.otchet').innerHTML = 0;
         alert("На вас напали!")
-        if(win < 2){
+        if(win < 3){
         alert("Вы не успели постоить защиту, Вы проиграли!")
         window.location.href = "https://bogdan5ik.github.io/warcraft/";
         return;
@@ -79,7 +79,7 @@ document.querySelector('.buy-2').onclick = function(){
         alert("Недостаточно материалов")
         return;
     }
-    alert("Вы купили башню")
+    alert("Вы купили Главное Здание")
     doski_set -= 80;
     rock_set -= 70;
     document.querySelector('.doski-sc   ').innerHTML = wood_set;
@@ -126,3 +126,99 @@ document.querySelector('.buy-5').onclick = function(){
     document.querySelector('.img5').style.display = "flex";
     win += 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
